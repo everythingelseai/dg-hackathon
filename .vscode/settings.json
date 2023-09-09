@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+    },
+    "typescript.preferences.importModuleSpecifier": "relative",
+}
