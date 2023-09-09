@@ -6,6 +6,12 @@
   "author": "Everything Else AI",
   "permissions": ["storage", "tabs"],
   "host_permissions": ["*://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
   "action": {
     "default_icon": {
       "16": "assets/ext-icon.png",

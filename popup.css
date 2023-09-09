@@ -1,53 +1,40 @@
-.container {
-  width: 280px;
-  color: #314d3e;
+.button {
+  width: 140px;
+
+  background-color: #9d89ee; /* Green */
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.title {
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px;
-}
-
-.textbox {
-  width: 100%;
-  font-size: 12px;
-  margin: 0;
-  padding: 0px 2px;
-}
-
-.textbox:focus {
-  outline: 0;
-  border-color: #66afe9;
-}
-
-.bookmarks {
-  margin: 5px 5px;
-  padding: 3px;
-}
-
-.bookmark {
-  display: flex;
-  border-bottom-color: #00254d;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-radius: 0.8rem;
-  padding: 3px;
-  padding-bottom: 7px;
-  margin-bottom: 7px;
-}
-
-.bookmark-title {
-  padding-left: 2px;
-}
-
-.bookmark-controls img {
-  margin: 0 4px;
-  width: 18px;
-  height: 18px;
+.button:hover {
+  background-color: #aa9bd8;
   cursor: pointer;
 }
-.bookmark-controls {
-  flex: auto;
-  text-align: right;
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.clear-btn {
+  background-color: #ef3686;
+}
+
+.clear-btn:hover {
+  background-color: #e75091;
+}
+
+input {
+  width: 180px;
+  padding: 9px 7px;
+}
+
+.container {
+  margin: 8px 0;
 }
