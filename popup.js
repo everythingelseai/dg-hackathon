@@ -255,12 +255,9 @@ const openAiRequest = async (prompt) => {
     // Configure the request
     xhr.open("POST", "https://api.openai.com/v1/chat/completions", true);
 
-    // TODO: remove token after hackathon!!!!!
+    const apiToken = "xxxx";
     // Set request headers
-    xhr.setRequestHeader(
-      "Authorization",
-      "Bearer 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"
-    );
+    xhr.setRequestHeader("Authorization", apiToken);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     // Define the payload (input text, model parameters, etc.)
@@ -295,11 +292,11 @@ const smmaryRequest = (url) => {
     // Initialize a new XMLHttpRequest object
     var xhr = new XMLHttpRequest();
 
-    // TODO: remove token after hackathon!!!!!
+    const apiToken = "xxxx";
     // Configure the request
     xhr.open(
       "GET",
-      `https://api.smmry.com/&SM_API_KEY=CF86F2AFB2&SM_URL=${url}`,
+      `https://api.smmry.com/&SM_API_KEY=${apiToken}&SM_URL=${url}`,
       true
     );
 
